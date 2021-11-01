@@ -7,7 +7,6 @@
 
 #include<stdio.h>
 
-
 /***************************************
  * @main
  *
@@ -15,7 +14,7 @@
 int main()
 {
     /* Basic Hello world like program */
-    printf("Hello there! welcome C-Projects Git-hub repository\n");
+    printf("Hello there! welcome to C-Projects Git-hub repository\n");
 }
 /***************************************
  * end
