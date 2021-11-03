@@ -5,53 +5,43 @@
  *
 ***************************************/
 
-#include<stdio.h>
-#include "LinkedList.h"
+
+/***************************************
+ * @Structure : Node
+ *
+***************************************/
+struct
+{
+    int data;
+    struct Node* nextNode;
+} Node;
 
 /***************************************
  * @function : addFirst
  *
 ***************************************/
-void addFirst(int element)
-{
-
-}
-
+void addFirst(int element);
 
 /***************************************
  * @function : addLast
  *
 ***************************************/
-void addLast(int element)
-{
-
-}
+void addLast(int element);
 
 /***************************************
  * @function : removeElemt
  *
 ***************************************/
-void removeElemt(int element)
-{
-
-}
-
+void removeElemt(int element);
 
 /***************************************
  * @function : displayList
  *
 ***************************************/
-void displayList()
-{
-
-}
-
+void displayList();
 
 /***************************************
- * @main
+ * @function : createList
  *
 ***************************************/
-int main()
-{
-    printf("Hello World!\n");
-}
+void createList();
