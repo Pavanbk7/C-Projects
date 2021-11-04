@@ -1,12 +1,12 @@
 /**************************************
- * LinkedList program in C
+ * Singly Linked List program in C
  *
  * @author : https://github.com/Pavanbk7
  *
 ***************************************/
 
 #include<stdio.h>
-#include "LinkedList.h"
+#include "SinglyLinkedList.h"
 
 /***************************************
  * @function : addFirst
@@ -46,12 +46,11 @@ void displayList()
 
 }
 
-
 /***************************************
- * @main
+ * @function : createList
  *
 ***************************************/
-int main()
+void createList()
 {
-    printf("Hello World!\n");
+    
 }

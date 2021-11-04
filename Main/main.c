@@ -7,16 +7,17 @@
 
 #include<stdio.h>
 
+#include "../Introduction/Introduction.h"
+#include "../DataStructures/SinglyLinkedList.h"
+
 /***************************************
  * @IntroFunc
  *
 ***************************************/
-void IntroFunc()
+int main()
 {
-    /* Basic Hello world like program */
-    printf("Hello there! welcome to C-Projects Git-hub repository\n");
+    //Contains a intro msg to the C-Projects repository
+    IntroFunc();
+
+    return 0u;
 }
-/***************************************
- * end
- *
-***************************************/
