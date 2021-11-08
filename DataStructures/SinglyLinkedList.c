@@ -39,6 +39,7 @@ static void addF(SList_t* L, void * element)
             L->head = tempNode;
         }
     }
+    free(tempNode);
 }
 
 /***************************************
