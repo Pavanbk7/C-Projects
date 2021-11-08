@@ -14,7 +14,7 @@
 void IntroFunc()
 {
     /* Basic Hello world like program */
-    printf("Hello there! welcome to C-Projects Git-hub repository\n");
+    printf("               Hello there! welcome to C-Projects Git-hub repository\n");
 }
 /***************************************
  * end

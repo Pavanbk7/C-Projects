@@ -1,5 +1,5 @@
 /**************************************
- * Basic Hello world like program
+ * C-Projects : main.c
  *
  * @author : https://github.com/Pavanbk7
  *
@@ -11,7 +11,7 @@
 #include "../DataStructures/SinglyLinkedList.h"
 
 /***************************************
- * @IntroFunc
+ * @main
  *
 ***************************************/
 int main()
@@ -19,5 +19,17 @@ int main()
     //Contains a intro msg to the C-Projects repository
     IntroFunc();
 
+    SList_t* list = SListInit();
+    int a = 10;
+    list->addFirst(list, &a);
+    list->addLast(list, &a);
+    list->removeElemt(list, &a);
+    list->reverseList(list);
+    list->displayList(list);
+
     return 0u;
 }
+/***************************************
+ * end
+ *
+***************************************/
