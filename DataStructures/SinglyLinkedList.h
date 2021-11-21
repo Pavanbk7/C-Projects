@@ -1,3 +1,6 @@
+#ifndef SINGLYLINKEDLIST_H
+#define SINGLYLINKEDLIST_H
+
 /**************************************
  * LinkedList program in C
  *
@@ -5,43 +8,67 @@
  *
 ***************************************/
 
+struct node
+{
+    // data and nextNode link
+    int data;
+    struct node* nextNode;
+};
 
 /***************************************
- * @Structure : Node
+ * @structure : SList
  *
 ***************************************/
-struct
+struct SList
 {
-    int data;
-    struct Node* nextNode;
-} Node;
+    //Tail and head
+    struct node* tail;
+    struct node* head;
+
+};
+
+typedef struct SList SList_t;
+typedef struct node Node_t;
+
+/***************************************
+ * @function : SListInit
+ *
+***************************************/
+SList_t* SListInit();
 
 /***************************************
  * @function : addFirst
  *
 ***************************************/
-void addFirst(int element);
+extern void addFirst(SList_t* L, int element);
 
 /***************************************
  * @function : addLast
  *
 ***************************************/
-void addLast(int element);
+extern void addLast(SList_t* L, int element);
 
 /***************************************
  * @function : removeElemt
  *
 ***************************************/
-void removeElemt(int element);
+extern void removeElemt(SList_t* L, int element);
 
 /***************************************
  * @function : displayList
  *
 ***************************************/
-void displayList();
+extern void displayList(SList_t* L);
 
 /***************************************
- * @function : createList
+ * @function : reverseL
  *
 ***************************************/
-void createList();
+extern void reverseList(SList_t* L);
+
+/***************************************
+ * end
+ *
+***************************************/
+
+#endif //SINGLYLINKEDLIST_H
