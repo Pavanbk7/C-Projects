@@ -25,12 +25,6 @@ struct SList
     struct node* tail;
     struct node* head;
 
-    //List processing Apis
-    void (*addFirst)(struct SList*, void *);
-    void (*addLast)(struct SList*, void * );
-    void (*removeElemt)(struct SList*, void *);
-    void (*reverseList)(struct SList*);
-    void (*displayList)(struct SList*);
 };
 
 typedef struct SList SList_t;
@@ -41,6 +35,36 @@ typedef struct node Node_t;
  *
 ***************************************/
 SList_t* SListInit();
+
+/***************************************
+ * @function : addFirst
+ *
+***************************************/
+extern void addFirst(SList_t* L, void * element);
+
+/***************************************
+ * @function : addLast
+ *
+***************************************/
+extern void addLast(SList_t* L, void *element);
+
+/***************************************
+ * @function : removeElemt
+ *
+***************************************/
+extern void removeElemt(SList_t* L, void *element);
+
+/***************************************
+ * @function : displayList
+ *
+***************************************/
+extern void displayList(SList_t* L);
+
+/***************************************
+ * @function : reverseL
+ *
+***************************************/
+extern void reverseList(SList_t* L);
 
 /***************************************
  * end

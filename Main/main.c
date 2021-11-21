@@ -21,11 +21,11 @@ int main()
 
     SList_t* list = SListInit();
     int a = 10;
-    list->addFirst(list, &a);
-    list->addLast(list, &a);
-    list->removeElemt(list, &a);
-    list->reverseList(list);
-    list->displayList(list);
+    addFirst(list, &a);
+    addLast(list, &a);
+    removeElemt(list, &a);
+    reverseList(list);
+    displayList(list);
 
     return 0u;
 }

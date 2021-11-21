@@ -19,7 +19,7 @@ static void reverseL(SList_t* L);
  * @function : addF
  *
 ***************************************/
-static void addF(SList_t* L, void * element)
+void addFirst(SList_t* L, void * element)
 {
     printf("               Inside the Add first function\n");
     Node_t* tempNode = (Node_t *)malloc(sizeof(Node_t));
@@ -46,7 +46,7 @@ static void addF(SList_t* L, void * element)
  * @function : addL
  *
 ***************************************/
-static void addL(SList_t* L, void *element)
+void addLast(SList_t* L, void *element)
 {
     printf("               Inside the Add last function\n");
 }
@@ -55,7 +55,7 @@ static void addL(SList_t* L, void *element)
  * @function : removeE
  *
 ***************************************/
-static void removeE(SList_t* L, void *element)
+void removeElemt(SList_t* L, void *element)
 {
     printf("               Inside the remove element function\n");
 }
@@ -64,7 +64,7 @@ static void removeE(SList_t* L, void *element)
  * @function : displayL
  *
 ***************************************/
-static void displayL(SList_t* L)
+void displayList(SList_t* L)
 {
     printf("               Inside the display list function\n");
     if(L != NULL)
@@ -89,7 +89,7 @@ static void displayL(SList_t* L)
  * @function : reverseL
  *
 ***************************************/
-static void reverseL(SList_t* L)
+void reverseList(SList_t* L)
 {
     printf("               Inside the reverse list function\n");
 }
@@ -102,11 +102,7 @@ SList_t* SListInit()
 {
     SList_t *list;
     list = (SList_t *)malloc(sizeof(SList_t));
-    list->addFirst = &addF;
-    list->addLast = &addL;
-    list->removeElemt = &removeE;
-    list->displayList = &displayL;
-    list->reverseList = &reverseL;
+
     list->tail = NULL;
     list->head = NULL;
 
