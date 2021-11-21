@@ -9,12 +9,6 @@
 #include <stdlib.h>
 #include "SinglyLinkedList.h"
 
-static void addF(SList_t* L, void *element);
-static void addL(SList_t* L, void *element);
-static void removeE(SList_t* L, void *element);
-static void displayL(SList_t* L);
-static void reverseL(SList_t* L);
-
 /***************************************
  * @function : addF
  *
