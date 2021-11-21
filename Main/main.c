@@ -20,10 +20,9 @@ int main()
     IntroFunc();
 
     SList_t* list = SListInit();
-    int a = 10;
-    addFirst(list, &a);
-    addLast(list, &a);
-    removeElemt(list, &a);
+    addFirst(list, 10);
+    addLast(list, 10);
+    removeElemt(list, 10);
     reverseList(list);
     displayList(list);
 

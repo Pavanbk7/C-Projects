@@ -13,7 +13,7 @@
  * @function : addF
  *
 ***************************************/
-void addFirst(SList_t* L, void * element)
+void addFirst(SList_t* L, int element)
 {
     printf("               Inside the Add first function\n");
     Node_t* tempNode = (Node_t *)malloc(sizeof(Node_t));
@@ -33,14 +33,14 @@ void addFirst(SList_t* L, void * element)
             L->head = tempNode;
         }
     }
-    free(tempNode);
+
 }
 
 /***************************************
  * @function : addL
  *
 ***************************************/
-void addLast(SList_t* L, void *element)
+void addLast(SList_t* L, int element)
 {
     printf("               Inside the Add last function\n");
 }
@@ -49,7 +49,7 @@ void addLast(SList_t* L, void *element)
  * @function : removeE
  *
 ***************************************/
-void removeElemt(SList_t* L, void *element)
+void removeElemt(SList_t* L, int element)
 {
     printf("               Inside the remove element function\n");
 }
@@ -65,7 +65,7 @@ void displayList(SList_t* L)
     {
         if(L->tail != NULL)
         {
-            printf("                   %d",*(int *)(L->tail->data));
+            printf("                   %d",(L->tail->data));
         }
         else
         {

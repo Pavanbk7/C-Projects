@@ -11,7 +11,7 @@
 struct node
 {
     // data and nextNode link
-    void* data;
+    int data;
     struct node* nextNode;
 };
 
@@ -40,19 +40,19 @@ SList_t* SListInit();
  * @function : addFirst
  *
 ***************************************/
-extern void addFirst(SList_t* L, void * element);
+extern void addFirst(SList_t* L, int element);
 
 /***************************************
  * @function : addLast
  *
 ***************************************/
-extern void addLast(SList_t* L, void *element);
+extern void addLast(SList_t* L, int element);
 
 /***************************************
  * @function : removeElemt
  *
 ***************************************/
-extern void removeElemt(SList_t* L, void *element);
+extern void removeElemt(SList_t* L, int element);
 
 /***************************************
  * @function : displayList
